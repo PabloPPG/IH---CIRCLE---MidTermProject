@@ -1,0 +1,205 @@
+/*
+Fuentes: Roboto 400("texto clarito), Roboto 500(resto), Roboto 700 (h1,h2,h3)
+*/
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    color: #292E47;
+}
+header{
+    margin: 70px 0 0 0;
+}
+h1{
+    font-size: 60px;
+    margin: 20px 0 30px;
+    line-height: 130%;
+}
+h2{
+    font-size: 40px;
+    margin: 20px 0 10px;
+    font-weight: bold;
+}
+.container{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.nav-bar{
+    margin: 0 auto;
+    max-width: 1100px;
+}
+.nav-bar-logo{
+    display: flex;
+    width: 60px;
+    height: 18px;
+    background-image: url("/Images/Home/logo.png");
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.nav-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-flex img{
+    width: 50%;
+}
+
+.nav-flex ul, .nav-flex li{
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.nav-flex li>a{
+    color: #292E47;
+}
+
+.nav-flex li{
+    padding: 20px;
+}
+
+#active{
+    color: #072AC8; 
+}
+
+.blue-btn{
+    padding: 15px 30px;
+    background-color: #072AC8;
+    color: white;
+}
+
+.btn-margin{
+    margin: 0 0 0 20px;
+}
+
+#empower-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#empower-section-text{
+    max-width: 530px;
+}
+
+#empower-section-text p{
+    max-width: 435px;
+    font-size: 20px;
+    margin: 0 0 40px;
+    line-height: 150%;
+}
+
+.images-container{
+    max-width: 570px;
+    position: relative;
+}
+.images-container img{
+    display: inline-block;
+}
+
+.cards{
+    max-width: 300px;
+    display: inline-block;
+}
+
+.position-top-left{
+    position: absolute;
+    top: 0;
+    left: -20%;
+}
+.position-bottom-right{
+    position: absolute;
+    bottom: -20%;
+    right: -20%;
+}
+.projects-grid{
+    display: grid;
+    grid-column-gap: 40px;
+    grid-row-gap: 16px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-row: 1fr 1fr;
+}
+
+.projects-grid img{
+    width: 100%;
+}
+
+.item-1-grid{
+    grid-column: 1/2;
+    grid-row: 1;
+}
+.item-2-grid{
+    grid-column: 2/3;
+    grid-row: 1;
+}
+.item-3-grid{
+    grid-column: 3/4;
+    grid-row: 1;
+}
+
+.item-4-grid{
+    grid-column: 1/2;
+    grid-row: 2;
+}
+.item-5-grid{
+    grid-column: 2/3;
+    grid-row: 2;
+}
+.item-6-grid{
+    grid-column: 3/4;
+    grid-row: 2;
+}
+
+#man-yellow-circle{
+    width: 100%;
+    vertical-align: middle;
+}
+
+#logos-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 200px 0;
+}
+
+#logos-section a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logos-section img{
+    width: 60%;
+}
+
+.height-240px{
+    margin: 0;
+    height: 240px;
+}
+
+@media only screen and (max-width: 768px) {
+    .desktop-view{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .mobile-view{
+        display: none;
+    }
+
+    #empower-section{
+        padding: 100px 30px 0;
+    }
+    
+}
