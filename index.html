@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +8,17 @@
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="shortcut icon" href="Images/Favicon/favicon.ico" type="image/x-icon">
     <title>Circle Agency</title>
 </head>
+
 <body>
     <header>
-        <div class="desktop-view nav-bar">
+        <div class="desktop-view nav-bar container">
             <nav class="nav-flex">
                 <div>
                     <a href="#" class="nav-bar-logo"></a>
@@ -31,94 +35,102 @@
                 </div>
             </nav>
         </div>
-        <div class="mobile-view nav-bar">
-            <div>
-                <a href="Images/Home/Logo.png"></a>
-                <a href="">BURGER MENU</a>
-            </div>
+        <div class="mobile-view nav-bar container">
+            <a href=""><img src="Images/Home/logo.png" alt="" id="nav-logo"></a>
+            <a href="">Burger</a>
         </div>
     </header>
     <main>
-        <section id="empower-section" class="container">
-            <div id="empower-section-text">
-                 <h1>Empower Your Business With Stunning Design!</h1>
-                 <p>Circle is a digital design and development studio. We design and develop astonishing websites and mobile apps.</p>
-                 <div>
+        <section id="empower-section" class="section">
+            <div>
+                <h1>Empower Your Business With Stunning Design!</h1>
+                <p>Circle is a digital design and development studio. We design and develop astonishing websites and
+                    mobile apps.</p>
+                <div id="empower-section-buttons">
                     <a href="#">See our work</a>
-                    <a href="#" class="blue-btn btn-margin">Get in touch</a>
-                 </div>
+                    <a href="#" class="blue-button">Get in touch</a>
+                </div>
             </div>
-            <div class="images-container">
-                <img class="cards position-top-left" src="Images/Home/Card 1.png" alt="">
-                <img id="man-yellow-circle" src="Images/Home/Hero Image.png" alt="">
-                <img class="cards position-bottom-right caca" src="Images/Home/Card 2.png" alt="">
+            <div>
+                <img src="Images/Home/Card 1.png" alt="" class="desktop-view">
+                <img src="Images/Home/Hero Image.png" alt="">
+                <img src="Images/Home/Card 2.png" alt="" class="desktop-view">
             </div>
         </section>
-        <section id="logos-section">
-            <a href=""><img src="Images/Home/Logos empresas/Airbnb Logo 1.png" alt=""></a>
-            <a href=""><img src="Images/Home/Logos empresas/Google Logo 1.png" alt=""></a>
-            <a href=""><img src="Images/Home/Logos empresas/Microsoft Logo 1.png" alt=""></a>
-            <a href=""><img src="Images/Home/Logos empresas/Fedex Logo 1.png" alt=""></a>
-            <a href=""><img src="Images/Home/Logos empresas/Amazon Logo 1.png" alt="">
+        <section id="logos-section" class="section">
+            <div class="company-logo"><img src="Images/Home/Logos empresas/Airbnb Logo 1.png" alt=""></div>
+            <div class="company-logo"><img src="Images/Home/Logos empresas/Google Logo 1.png" alt=""></div>
+            <div class="company-logo"><img src="Images/Home/Logos empresas/Microsoft Logo 1.png" alt=""></div>
+            <div class="company-logo"><img src="Images/Home/Logos empresas/Fedex Logo 1.png" alt=""></div>
+            <div class="company-logo"><img src="Images/Home/Logos empresas/Amazon Logo 1.png" alt="" id="amazon-logo"></div>    
         </section>
-        <section id="projects-section" class="container">
+        <section id="projects-section" class="section">
             <h2>Recent Projects</h2>
-            <div class="projects-grid">
-                <div>
-                    <div class="item-1-grid"><img src="Images/Home/simplify recent projects.png" alt=""></div>
-                    <div class="item-4-grid">
-                        <h3>Simplify</h3>
-                        <p>UI Design & App Development</p>
-                        <a href="">Learn More</a>
-                    </div>
-                </div>
-                <div>
-                    <div class="item-2-grid"><img src="Images/Home/dashcoin recent projects.png"></div>
-                    <div class="item-5-grid">
-                        <h3>Dashcoin</h3>
-                        <p>Web Development</p>
-                        <a href="">Learn More</a>
-                    </div>
-                </div>
-                <div> 
-                    <div class="item-3-grid"><img src="Images/Home/vectorify recent projects.png""></div>
-                    <div class="item-6-grid">
-                        <h3>Vectorify</h3>
-                        <p>User Experience Design</p>
-                        <a href="">Learn More</a>
-                    </div>
-                </div>            
-            </div>
-        </section>
-        <section id="clients-section">
-            <div class="blue-background">
-                <div class="memojis">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                </div>
-                <div class="concentric-circles">
-                    <div id="inner-circle"></div>
-                    <div id="mid-circle"></div>
-                    <div id="outer-circle"></div>
-                </div>
-                <div>
-                    <h3>Hear What Our Clients Have to Say</h3>
-                    <p>"Circle helped us through every stage of our startup. We really enjoyed working with you."</p>
-                    <div>
-                        <div>
-
+            <div id="projects-grid">
+                <div class="project-item">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="Images/Home/simplify recent projects.png" alt="">
                         </div>
-                        <div>
-                            <h4>Kristin Watson</h4>
-                            <p>Booking.com</p>
+                        <div class="project-content">
+                            <h3>Simplify</h3>
+                            <p>UI Design & App Development</p>
+                            <a href="">Learn More</a>
                         </div>
                     </div>
                 </div>
+                <div class="project-item">
+                    <div class="project-card">
+                        <div class="project-image"><img src="Images/Home/dashcoin recent projects.png"></div>
+                        <div class="project-content">
+                            <h3>Dashcoin</h3>
+                            <p>Web Development</p>
+                            <a href="">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-card">
+                        <div class="project-image"><img src="Images/Home/vectorify recent projects.png""></div>
+                        <div class="project-content">
+                            <h3>Vectorify</h3>
+                            <p>User Experience Design</p>
+                            <a href="">Learn More</a>
+                        </div>
+                    </div>
+                </div>         
             </div>
         </section>
-        <section id="services-section">
+        <section id="clients-section" class="section">
+                        <div>
+                            <div class="desktop-view">
+                                <img src="" alt="">
+                                <img src="" alt="">
+                                <img src="" alt="">
+                                <img src="" alt="">
+                            </div>
+                            <div class="desktop-view">
+                                <div id="inner-circle"></div>
+                                <div id="mid-circle"></div>
+                                <div id="outer-circle"></div>
+                            </div>
+                            <div class="clients-flex">
+                                <h3>Hear What Our Clients Have to Say</h3>
+                                <p>"Circle helped us through every stage of our startup. We really enjoyed working with
+                                    you."</p>
+                                <div>
+                                    <div>
+                                        <img src="Images/Home/elipse clients.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h4>Kristin Watson</h4>
+                                        <p>Booking.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        </section>
+        <section id="services-section" class="section">
             <h2>Our services</h2>
             <div>
                 <div>
@@ -141,7 +153,7 @@
                 </div>
             </div>
         </section>
-        <section id="questions-section">
+        <section id="questions-section" class="section">
             <h2>Do you have any questions?</h2>
             <p>Let us help you!</p>
             <form action="">
@@ -167,4 +179,5 @@
         </div>
     </footer>
 </body>
+
 </html>
