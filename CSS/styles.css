@@ -1,6 +1,15 @@
 /*
 Fuentes: Roboto 400("texto clarito), Roboto 500(resto), Roboto 700 (h1,h2,h3)
 */
+/*NEEDED FOR THE BURGER MENU ICONS*/
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+/*---------------------------------*/
 *{
     margin: 0;
     padding: 0;
@@ -33,12 +42,10 @@ footer{
 .blue-button:hover{
     background-color: #292E47;
 }
-
-.nav-bar{
+.company-logo{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    padding: 18px 30px;
 }
 .project-card {
     display: flex;
@@ -151,6 +158,7 @@ footer{
 }
 #empower-section{
     display: flex;
+    position:relative;
 }
 #empower-section-buttons{
     display: flex;
@@ -251,14 +259,50 @@ footer{
     outline: 1px solid #072AC8;
 }
 
+#active-desktop{
+    color: #072AC8; 
+}
+#active-burger{
+    color: #072AC8; 
+}
+
 @media only screen and (max-width: 768px) {
     /*DESKTOP VIEW DISABLE*/
     .desktop-view, #amazon-logo{
         display: none;
     }
-    /*EMPOWER SECTION*/
+    /*--------------------*/
+    /*BURGER MENU*/
+    .hamburger {
+        position: relative;
+        display: block;
+        z-index: 100;
+        padding: 4px;
+        cursor: pointer;
+        border: none;
+        background-color: #f2f4fc;
 
-    /*--------------------GENERAL ELEMENTS--------------------*/
+    }
+    .hamburger-buton{
+        display: block;
+    }
+    .closeIcon {
+        display: none;
+    }
+    .menu {
+        position: fixed;
+        transform: translateY(-100%);
+        transition: transform 0.4s;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 99;
+        list-style: none;
+    }
+    .showMenu {
+        transform: translateY(0);
+    }
+    /*-----------*/
     h1, h2{
         font-size: 30px;
         margin: 20px 0 30px;
@@ -268,29 +312,88 @@ footer{
         font-size: 24px;
         margin: 30px 30px 20px;
     }
+    .menu{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: #C8C8C8;
+        text-align: center;
+        overflow: visible;
+        min-width: 200px;
+    }
     #padding-mobile{
-        margin: 60px 0 0;
+        margin: 60px 0 100px;
+    }
+    .nav-bar-flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f2f4fc;
+        color: #f2f4fc;
+        padding-right: 30px;
+        padding-left: 30px;        
+    }
+    .nav-bar-logo-mobile{
+        width: 60px;
+        height: 18px;
+        background-image: url("/Images/Home/logo.png");
+        background-position: 50% 50%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: relative;
+        float: left;
+        text-decoration: none;
+        color: #333333;
+    }
+    .hamburger-container{
+        display: block;
+        position: relative;
+        float: right;
+        padding: 18px;
+        font-size: 24px;
+        display: none;
+        cursor: pointer;
+        display: block;
+        color: white;
+    }
+    .menu-container{
+        height: 100%;
+        display: block;
+        position: absolute;
+        overflow: hidden;
+        display: block;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+    .menu > li > a{
+        color: #6b708d;
+        font-size: 17px;
+        font-weight: 500;
+        display: block;
+        position: relative;
+        text-decoration: none;
+        padding: 20px;
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+        cursor: pointer;
     }
 
-    
-    /*--------------------CLASSES--------------------*/
-    /*general*/
     .section{
         padding: 0 30px;
     }
     .blue-button{
         margin: 0px 0 20px;
     }
-    /*companies logos section*/
     .company-logo{
-        display: flex;
         margin: 15px auto;
-        justify-content: center;
-        align-items: center;
         height: 100px;
         width: 120px;
     }
-
     .company-logo > img{
         max-width: 100%;
     }
@@ -308,6 +411,13 @@ footer{
     .project-content a{
         font-size: 17px;  
         margin: 30px;
+    }
+    .projects-link{
+        margin: 30px;
+        text-align: left;
+    }
+    .projects-link a{
+        margin: 0;
     }
     .clients-flex{
         height: 450px;
@@ -333,9 +443,6 @@ footer{
         font-size: 17px;  
         margin: 30px;
     }
-    
-    /*--------------------IDS--------------------*/
-    /*empower section*/
     #empower-section{
         flex-direction: column;
         text-align: center;
@@ -355,15 +462,11 @@ footer{
         align-items: center;
         margin-bottom: 40px;
     }
-
-     /*companies logos section*/
     #logos-section{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr 1fr 0;
         grid-gap: 10px
     }
-
-    /*projects section*/
     #projects-section{
         margin-top: 40px;
     }
@@ -396,6 +499,13 @@ footer{
     .mobile-view{
         display: none;
     }    
+    header{
+        margin: 70px 0 0 0;
+    }
+    h1{
+        font-size: 60px;
+        margin: 20px 0 30px;
+    }
     h2{
         font-size: 40px;
         margin: 20px;
@@ -407,20 +517,83 @@ footer{
     footer{
         padding: 200px 30px 100px;
     }
-
-    .desktop-footer{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+    .nav-bar-desktop{
+        margin: 0 auto 100px;
+        max-width: 1100px;
+        align-items: center;
+        padding: 18px 30px;
     }
+    .nav-bar-logo{
+        display: flex;
+        width: 60px;
+        height: 18px;
+        background-image: url("/Images/Home/logo.png");
+        background-position: 50% 50%;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .nav-flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-flex img{
+        width: 50%;
+    }
+    
+    .nav-flex ul, .nav-flex li{
+        text-decoration: none;
+        list-style-type: none;
+        display: flex;
+        font-size: 17px;
+        font-weight: 500;
+    }
+    
+    .nav-flex li>a{
+        color: #292E47;
+    }
+    
+    .nav-flex li{
+        padding: 20px;
+    }
+    
+    .empower-content{
+      max-width: 530px;  
+    }
+    .empower-images{
+        position: relative;
+        max-width: 570px; 
+    }
+    .yellow-circle-man {
+        width: 100%;
+    }
+    .card-1{
+        position: absolute; 
+        top: 0;
+        left: -20%;
+    }
+    .card-2{
+        position: absolute;
+        bottom: -20%;
+        right: -20%;
+    } 
+    .card-1{
+        width: 50%;
+    }
+    .card-2{
+        width: 50%;
+    }
+    
     .link{
         margin: 30px;
         text-align: left;
+
     }
 
     .services-grid{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+        align-items: center;
         gap: 2vw;
     }
     .services-card p{
@@ -459,15 +632,40 @@ footer{
         justify-content: center;
         align-items: center;
     }
-
     .big-rectangle{
         width:1300px;
         margin: 200px auto 0;
     }
+    .desktop-footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
+    #empower-section{
+        justify-content:space-around;
+        align-items: center;
+    }
+    #empower-section p{
+        font-size: 20px;
+        margin: 0 0 40px;
+        color: #6B708D;
+    }
+    #empower-section-buttons{
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    #empower-section-buttons > .blue-button{
+        margin: 0 40px 0 20px;
+    }
     #logos-section{
+        margin-top: 200px;
         display: flex;
         justify-content: space-between;
+    }
+    #projects-section{
+        margin-top: 200px;
     }
     #projects-section h2{
         margin-left: 0;
@@ -482,7 +680,7 @@ footer{
         height: 600px;
     }
     #services-section{
-        margin: 200px;
+        margin: 200px auto;
     }
     #yellow-quote{
         font-size: 24px;

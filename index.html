@@ -8,41 +8,58 @@
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="shortcut icon" href="Images/Favicon/favicon.ico" type="image/x-icon">
+    
     <title>Circle Agency</title>
 </head>
 
 <body>
     <header>
-        <div class="desktop-view nav-bar container">
-            <nav class="nav-flex">
+        <div class="desktop-view nav-bar-desktop">
+            <div class="nav-flex">
                 <div>
                     <a href="#" class="nav-bar-logo"></a>
                 </div>
                 <div>
                     <ul>
-                        <li><a href="#" id="active">Home</a></li>
+                        <li ><a href="#" id="active-desktop">Home</a></li>
                         <li><a href="#">Projects</a></li>
                         <li><a href="#">Services</a></li>
                     </ul>
                 </div>
                 <div>
-                    <a href="#" class="blue-btn">Contact Us</a>
+                    <a href="#" class="blue-button">Contact Us</a>
                 </div>
-            </nav>
+            </div>
         </div>
-        <div class="mobile-view nav-bar container">
-            <a href=""><img src="Images/Home/logo.png" alt="" id="nav-logo"></a>
-            <a href="">Burger</a>
+        <div class="mobile-view nav-bar-mobile container">
+            <div class="nav-bar-flex">
+                <a href="#" class="nav-bar-logo-mobile"></a>
+                <div class="hamburger-container">
+                    <button class="hamburger">
+                        <span class="menuIcon material-symbols-outlined">menu</span>
+                        <span class="closeIcon material-symbols-outlined">close</span>
+                    </button>
+                </div>
+            </div>
         </div>
     </header>
     <main>
-        <section id="empower-section" class="section">
-            <div>
+        <section id="empower-section" class="section container">
+            <div class="menu-container mobile-view">
+                <nav>
+                    <ul class="menu">
+                        <li ><a class="menuItem" id="active-burger" href="#">Home</a></li>
+                        <li><a class="menuItem" href="#">Profile</a></li>
+                        <li><a class="menuItem" href="#">About</a></li>
+                        <li><a class="menuItem" href="#">Contacts</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="empower-content">
                 <h1>Empower Your Business With Stunning Design!</h1>
                 <p>Circle is a digital design and development studio. We design and develop astonishing websites and
                     mobile apps.</p>
@@ -51,10 +68,10 @@
                     <a href="#" class="blue-button">Get in touch</a>
                 </div>
             </div>
-            <div>
-                <img src="Images/Home/Card 1.png" alt="" class="desktop-view">
-                <img src="Images/Home/Hero Image.png" alt="">
-                <img src="Images/Home/Card 2.png" alt="" class="desktop-view">
+            <div class="empower-images">
+                <img src="Images/Home/Card 1.png" alt="" class="desktop-view card-1">
+                <img src="Images/Home/Hero Image.png" alt="" class="yellow-circle-man">
+                <img src="Images/Home/Card 2.png" alt="" class="desktop-view card-2">
             </div>
         </section>
         <section id="logos-section" class="section container">
@@ -75,7 +92,7 @@
                         <div class="project-content">
                             <h3>Simplify</h3>
                             <p>UI Design & App Development</p>
-                            <div class="link"><a href="">Learn More</a></div>
+                            <div class="projects-link link"><a href="">Learn More</a></div>
                         </div>
                     </div>
                 </div>
@@ -85,7 +102,7 @@
                         <div class="project-content">
                             <h3>Dashcoin</h3>
                             <p>Web Development</p>
-                            <div class="link"><a href="">Learn More</a></div>
+                            <div class="projects-link link"><a href="">Learn More</a></div>
                         </div>
                     </div>
                 </div>
@@ -95,7 +112,7 @@
                         <div class="project-content">
                             <h3>Vectorify</h3>
                             <p>User Experience Design</p>
-                            <div class="link"><a href="">Learn More</a></div>
+                            <div class="projects-link link"><a href="">Learn More</a></div>
                         </div>
                     </div>
                 </div>         
@@ -108,11 +125,6 @@
                                 <img src="Images/Home/memoji chico 1.png" alt="" class="memojis memoji-down-left">
                                 <img src="Images/Home/memoji chica 2.png" alt="" class="memojis memoji-up-right">
                                 <img src="Images/Home/memoji chico 2.png" alt="" class="memojis memoji-down-right">
-                            </div>
-                            <div class="desktop-view">
-                                <div id="inner-circle"></div>
-                                <div id="mid-circle"></div>
-                                <div id="outer-circle"></div>
                             </div>
                             <div class="clients-flex">
                                 <h3>Hear What Our Clients Have to Say</h3>
@@ -184,6 +196,7 @@
             <a href="#">Privacy Policy</a>
         </div>
     </footer>
+    <script src="JS/index.js"></script>
 </body>
 
 </html>
