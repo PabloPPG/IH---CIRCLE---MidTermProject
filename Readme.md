@@ -7,3 +7,9 @@ The technologies used to make this website are:
 > •	HTML
 > •	CSS
 > •	JavaScript
+
+
+--------------------------------------
+--------------------------------------
+
+## PAG FINAL: [circle copia](https://celadon-pudding-2254cb.netlify.app/index.html)
