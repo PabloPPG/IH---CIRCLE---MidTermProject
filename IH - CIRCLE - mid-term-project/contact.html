@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="shortcut icon" href="Images/Favicon/favicon.ico" type="image/x-icon">
+    
+    <title>Circle Agency</title>
+</head>
+
+<body>
+    <header>
+        <div class="desktop-view nav-bar-desktop">
+            <div class="nav-flex">
+                <div>
+                    <a href="#" class="nav-bar-logo"></a>
+                </div>
+                <div>
+                    <ul>
+                        <li ><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="#">Services</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <a href="#" class="blue-button">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-view nav-bar-mobile container">
+            <div class="nav-bar-flex">
+                <a href="#" class="nav-bar-logo-mobile"></a>
+                <div class="hamburger-container">
+                    <button class="hamburger">
+                        <span class="menuIcon material-symbols-outlined">menu</span>
+                        <span class="closeIcon material-symbols-outlined">close</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="contact" class="section container">
+            <div class="menu-container mobile-view container">
+                <nav>
+                    <ul class="menu">
+                        <li ><a class="menuItem" href="index.html">Home</a></li>
+                        <li><a class="menuItem" href="projects.html">Projects</a></li>
+                        <li><a class="menuItem" href="#">About</a></li>
+                        <li><a class="menuItem" href="#">Contacts</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <h1>Contact Us</h1>
+                <div class="contact-form">
+                    <form action="">
+                        <label for="full-name">Full Name*</label>
+                        <input type="text" name="full-name" id="full-name" required placeholder="Enter your full name"> 
+                        <div class="contact-flex">
+                            <div>
+                                <label for="emailaddress">Email</label>
+                                <input type="emailaddress" name="emailaddress" id="emailaddress" placeholder="Enter your email">
+                            </div>
+                            <div>
+                                <label for="phone">Phone</label>
+                                <input type="tel" name="phone" id="phone" placeholder="Enter your phone">
+                            </div>   
+                        </div>
+                        <label for="message">Message*</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Write your message here..."></textarea>
+                        <input type="submit" value="Submit" class="blue-button" id="submit-form">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="padding-mobile" class="container section centering-elements-footer desktop-footer">
+        <div class="footer-flex">
+            <img src="Images/Home/Logo.png" alt="">
+            <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
+        </div>
+        <div class="footer-grid">
+            <a href="#">Team</a>
+            <a href="#">Services</a>
+            <a href="#">About Us</a>
+            <a href="#">Press</a>
+            <a href="#">Projects</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+    </footer>
+    <script src="JS/index.js"></script>
+</body>
+
+</html>
