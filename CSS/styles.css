@@ -50,8 +50,8 @@ footer{
 .project-card {
     display: flex;
     width: 100%;
-    height: 444px;
-    max-height: 444px;
+    height: 600px;
+    max-height: 600px;
     flex-direction: column;
     justify-content: flex-start;
 }
@@ -65,6 +65,7 @@ footer{
     flex-direction: column;
     justify-content: space-between;
     background-color: #FFFFFF;
+    height: 100%;
 }
 .clients-flex{
     display: flex;
@@ -152,6 +153,35 @@ footer{
     grid-row-gap: 16px;
     grid-template-columns: 1fr 1fr 1fr;
 }
+.single-project-subtitle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.single-project-subtitle h2{
+    font-size: 24px;
+    margin: 0;
+}
+
+.single-project-img{
+    width: 100%;
+    height: 450px;
+    margin: 100px 0;
+    background-image: url("/Images/Home/simplify\ recent\ projects.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.contact-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact-flex input{
+    display: flex;
+    width: 100%;
+    align-self: stretch;
+}
+
 #nav-logo{
     width: 60px;   
     height: 18px;
@@ -265,6 +295,53 @@ footer{
 #active-burger{
     color: #072AC8; 
 }
+#contentIndividual{
+    font-size: 20px;
+}
+.contact-form input{
+    width: 100%;
+    height: 70px;
+    padding-left: 20px;
+    border: 1px none #000;
+    background-color: rgba(107, 112, 141, 0.1);
+    display: block;
+    height: 38px;
+    padding: 30px 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 1.42857143;
+    color: #333333;    
+}
+textarea{
+    width: 100%;
+    height: 70px;
+    padding-left: 20px;
+    border: 1px none #000;
+    background-color: rgba(107, 112, 141, 0.1);
+    display: block;
+    padding: 30px 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #333333;    
+}
+.contact-form [input=email]{
+    background-image: none;
+}
+.contact-form label{
+    color: #6b708d;
+    font-size: 20px;
+    margin: 0 0 50px;
+}
+#submit-form{
+    margin-top: 20px;
+    padding: 25px 30px 50px;
+    background-color: #072ac8;
+    color: white;
+}
+#submit-form:hover{
+    background-color: #292E47;
+}
+
 
 @media only screen and (max-width: 768px) {
     /*DESKTOP VIEW DISABLE*/
@@ -493,6 +570,12 @@ footer{
     #services-section h2{
         text-align: center;
     }
+    #single-project{
+        position:relative;
+    }
+    #contact{
+        position:relative;
+    }
 }
 
 @media only screen and (min-width: 769px) {
@@ -639,6 +722,9 @@ footer{
     .desktop-footer{
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+    }
+    .contact-flex{
         justify-content: space-between;
     }
 
